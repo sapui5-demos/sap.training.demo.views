@@ -1,0 +1,8 @@
+<mvc:View controllerName="sap.training.controller.MyXMLView" xmlns:core="sap.ui.core" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Button press="onButtonPress" text="Button auf XML View"/>
+	<Input id="idInput"/>
+	<mvc:JSView id="idJSView" viewName="sap.training.view.MyJSView"/>
+	<mvc:HTMLView id="idHTMLView" viewName="sap.training.view.MyHTMLView"/>
+	<mvc:JSONView id="idJSONView" viewName="sap.training.view.MyJSONView"/>
+</mvc:View>
