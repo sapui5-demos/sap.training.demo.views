@@ -16,12 +16,23 @@
 		</script>
 
 		<script>
-			var oView = sap.ui.view({
-							id: "idMain",
-							viewName: "sap.training.view.MyXMLView",
+			// var oView = sap.ui.view({
+			//				id: "idMain",
+			//				viewName: "sap.training.view.MyXMLView",
+			//				type: sap.ui.core.mvc.ViewType.XML
+			//			 });
+			// oView.placeAt("content");
+			
+			sap.ui.require(["sap/ui/core/mvc/View"], function(View) {
+				View.create({
+							  id: "idView",
+						viewName: "sap.training.view.MyXMLView",
 							type: sap.ui.core.mvc.ViewType.XML
-						});
-			oView.placeAt("content");
+					}).then(function(oView) {
+						oView.placeAt("content");
+				});
+			});
+
 		</script>
 	</head>
 
