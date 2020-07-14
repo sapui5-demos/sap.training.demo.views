@@ -1,6 +1,6 @@
 {
 	"Type": "sap.ui.core.mvc.JSONView",
-	"controllerName": "sap.training.controller.MyJSONView",
+	"controllerName": "student00.training.controller.MyJSONView",
 	"content": [{
 		"Type": "sap.m.Button",
 		"text": "Button auf JSON View",

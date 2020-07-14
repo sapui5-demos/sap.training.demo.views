@@ -1,12 +1,12 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller"
-], function(Controller) {
+], function (Controller) {
 	"use strict";
 
-	return Controller.extend("sap.training.controller.MyJSONView", {
+	return Controller.extend("student00.training.controller.MyJSONView", {
 
-		onButtonPress: function() {
-			var oInput = this.getView().byId("idInput");
+		onButtonPress: function () {
+			var oInput = this.byId("idInput");
 			oInput.setValue("Hallo JSON View");
 		}
 
